@@ -32,9 +32,9 @@ def sum_array(array)
   array.inject { |a, b| a + b }
 end 
 
-def add_s(array, index)
-  array.map.with_index do |item,index|
+def add_s(array)
+  array.map.with_index do |item, index|
     index != 1 ? item << "s" : item
+  end
 end 
-end
   
